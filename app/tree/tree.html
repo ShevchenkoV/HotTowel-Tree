@@ -1,0 +1,26 @@
+﻿<section class="mainbar" data-ng-controller="TreeController as vm">
+    <section class="matter">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="widget wviolet">
+                    <div data-cc-widget-header title="{{vm.title}}"></div>
+                    <div class="widget-content user">
+                        <h3>TODO: Implement Tree Features</h3>
+                    </div>
+                    <!-- tree -->
+                    <div>
+                        <button data-ng-show="isCheckedShown" data-ng-click="isCheckedShown = false">Show only unchecked</button>
+                        <button data-ng-hide="isCheckedShown" data-ng-click="isCheckedShown = true">Show all</button>
+                    </div>
+                    <ul>
+                        <li data-tree-node="tasksTree" data-is-shown="isCheckedShown"></li>
+                    </ul>
+                    <!-- tree-->
+                    <div class="widget-foot">
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
